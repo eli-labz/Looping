@@ -20,11 +20,12 @@ jobs:
           node-version: '22'
           registry-url: 'https://registry.npmjs.org'
 
+      - name: Ensure npm supports trusted publishing (OIDC)
+        run: npm install -g npm@latest
+
       - name: Test, build & publish
         working-directory: tools/loop-init
         run: |
           npm ci
           npm test
-          npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          npm publish --access public --provenance

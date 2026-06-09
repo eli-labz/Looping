@@ -22,6 +22,9 @@ jobs:
           cache: 'npm'
           cache-dependency-path: tools/loop-audit/package-lock.json
 
+      - name: Ensure npm supports trusted publishing (OIDC)
+        run: npm install -g npm@latest
+
       - name: Install, build, test
         working-directory: tools/loop-audit
         run: |
@@ -29,8 +32,6 @@ jobs:
           npm run build
           npm test
 
-      - name: Publish to npm
+      - name: Publish to npm (trusted publishing — no NPM_TOKEN)
         working-directory: tools/loop-audit
-        run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --access public --provenance

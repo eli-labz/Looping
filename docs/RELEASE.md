@@ -7,11 +7,18 @@ This repo ships two public npm packages from `tools/`:
 | `@cobusgreyling/loop-audit` | `tools/loop-audit` | `loop-audit-v*` |
 | `@cobusgreyling/loop-init` | `tools/loop-init` | `loop-init-v*` |
 
-## One-time setup
+## One-time setup (trusted publishing — recommended)
 
-1. Create an npm org/user scope `@cobusgreyling` on [npmjs.com](https://www.npmjs.com/).
-2. Generate an npm **Automation** or **Publish** token.
-3. Add it to the repo as **`NPM_TOKEN`** (Settings → Secrets → Actions).
+Link npm to GitHub, then for **each package** on [npmjs.com](https://www.npmjs.com/) → package **Settings** → **Trusted Publisher** → **GitHub Actions**:
+
+| Package | Repository | Workflow filename |
+|---------|--------------|-------------------|
+| `@cobusgreyling/loop-audit` | `cobusgreyling/loop-engineering` | `release-loop-audit.yml` |
+| `@cobusgreyling/loop-init` | `cobusgreyling/loop-engineering` | `release-loop-init.yml` |
+
+Names must match **exactly** (case-sensitive). No `NPM_TOKEN` secret is required when trusted publishing is configured.
+
+**Legacy fallback:** add an npm Automation token as repo secret `NPM_TOKEN` and restore `NODE_AUTH_TOKEN` in the publish steps.
 
 ## Version bump
 
