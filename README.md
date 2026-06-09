@@ -23,6 +23,12 @@
 
 
 
+**Loop engineering is replacing yourself as the person who prompts the agent. You design the system that does it instead.**
+
+A loop is a recursive goal: you define a purpose and the AI iterates (often with sub-agents, verification, and external state) until the goal is complete or the loop decides to hand off to you.
+
+
+
 <p align="center">
   <img src="assets/visuals/loop-engineering-social-banner.jpg" alt="Loop Engineering — Design the system that prompts your agents" width="100%" />
 </p>
@@ -30,13 +36,6 @@
 <p align="center">
   <strong><a href="https://cobusgreyling.github.io/loop-engineering/">→ cobusgreyling.github.io/loop-engineering</a></strong>
 </p>
-
-
-
-
-**Loop engineering is replacing yourself as the person who prompts the agent. You design the system that does it instead.**
-
-A loop is a recursive goal: you define a purpose and the AI iterates (often with sub-agents, verification, and external state) until the goal is complete or the loop decides to hand off to you.
 
 ## Quick Links
 
