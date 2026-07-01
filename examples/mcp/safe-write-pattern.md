@@ -9,7 +9,7 @@ Any time a loop needs to *change* external state (create PR, update ticket, post
 5. **Propose only**:
    - Open a draft PR (or comment with diff link + summary)
    - Or create/update a ticket with "proposed by loop — human review requested"
-   - Sign everything: `🤖 Loop Engineering — <Pattern Name>`
+   - Sign everything: `🤖 Looping — <Pattern Name>`
 6. **Record in state** (what was proposed, link, timestamp, risk)
 7. **Human gate** (or very narrow allowlist + extra verifier for trivial patches)
 8. **Prune / close** stale proposals on next runs
@@ -36,3 +36,4 @@ Never merge. Update pr-babysitter-state.md.
 - Easy to pause: `scheduler_delete` or disable the Action.
 
 This is the recommended default for all L2+ loops that touch external systems.
+

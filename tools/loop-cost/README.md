@@ -1,6 +1,6 @@
 # loop-cost
 
-Estimate daily token spend for [loop engineering](https://github.com/cobusgreyling/loop-engineering) patterns by cadence and readiness level (L1–L3).
+Estimate daily token spend for [Looping](https://github.com/cobusgreyling/looping) patterns by cadence and readiness level (L1–L3).
 
 Uses cost metadata from `patterns/registry.yaml`.
 

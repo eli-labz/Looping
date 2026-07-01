@@ -1,4 +1,4 @@
-# Loop State — loop-engineering reference
+# Loop State — looping reference
 
 Last run: 2026-06-30T10:45:45Z (automated daily-triage workflow)
 
@@ -20,3 +20,4 @@ Last run: 2026-06-30T10:45:45Z (automated daily-triage workflow)
 
 ---
 Run log: Updated by `.github/workflows/daily-triage.yml`. See `LOOP.md` for cadence and gates.
+

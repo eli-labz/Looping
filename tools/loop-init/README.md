@@ -1,6 +1,6 @@
 # loop-init
 
-Scaffold loop engineering starters into your project by pattern and tool.
+Scaffold Looping starters into your project by pattern and tool.
 
 **npx @cobusgreyling/loop-init . --pattern daily-triage --tool grok** works immediately.
 

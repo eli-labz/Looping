@@ -37,7 +37,7 @@ opencode run \
   --title "CI sweeper"
 ```
 
-Use [loop-cost](https://github.com/cobusgreyling/loop-engineering/blob/main/tools/loop-cost) before choosing a cadence; encode the daily cap in `LOOP.md` and `AGENTS.md` as a hard stop.
+Use [loop-cost](https://github.com/cobusgreyling/looping/blob/main/tools/loop-cost) before choosing a cadence; encode the daily cap in `LOOP.md` and `AGENTS.md` as a hard stop.
 
 ## Cadence: shell loop
 
@@ -86,3 +86,4 @@ Discard the worktree after verifier REJECT; merge or PR on APPROVE.
 - [patterns/ci-sweeper.md](../../patterns/ci-sweeper.md)
 - [templates/SKILL.md.loop-triage](../../templates/SKILL.md.loop-triage)
 - [tools/loop-cost](../../tools/loop-cost) — cadence-to-cost mapping
+

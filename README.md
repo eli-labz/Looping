@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <a href="https://cobusgreyling.github.io/loop-engineering/">
+  <a href="https://cobusgreyling.github.io/looping/">
     <img src="https://img.shields.io/badge/✨_Explore_the_Showcase-Design_systems_that_prompt_your_agents-0d1117?style=for-the-badge&labelColor=111a28&color=3ee8c5" alt="Explore the Showcase" />
   </a>
 </p>
@@ -15,13 +15,13 @@
   <a href="https://www.npmjs.com/package/@cobusgreyling/loop-cost"><img src="https://img.shields.io/npm/v/@cobusgreyling/loop-cost?label=loop-cost" alt="loop-cost npm"></a>
   <a href="https://www.npmjs.com/package/@cobusgreyling/loop-sync"><img src="https://img.shields.io/npm/v/@cobusgreyling/loop-sync?label=loop-sync" alt="loop-sync npm"></a>
   <a href="https://github.com/eli-labz/looping/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT"></a>
-  <a href="https://cobusgreyling.github.io/loop-engineering/"><img src="https://img.shields.io/badge/GitHub_Pages-live%20%7C%20interactive-3ee8c5" alt="Pages"></a>
+  <a href="https://cobusgreyling.github.io/looping/"><img src="https://img.shields.io/badge/GitHub_Pages-live%20%7C%20interactive-3ee8c5" alt="Pages"></a>
 </p>
 
 
 <p align="center">
-  <a href="https://cobusgreyling.github.io/loop-engineering/">
-    <img src="assets/visuals/loop-engineering-logo.svg" alt="Looping logo" width="88" />
+  <a href="https://cobusgreyling.github.io/looping/">
+    <img src="assets/visuals/looping-logo.svg" alt="Looping logo" width="88" />
   </a>
 </p>
 
@@ -60,18 +60,18 @@ npx @cobusgreyling/loop-init .
   </a>
 </p>
 
-Loop engineering replaces you as the person who prompts the agent — you design the system that does it instead.
+Looping replaces you as the person who prompts the agent — you design the system that does it instead.
 
-**New here?** [Quickstart (5 min)](docs/QUICKSTART.md) · [Interactive picker](https://cobusgreyling.github.io/loop-engineering/#interactive)
+**New here?** [Quickstart (5 min)](docs/QUICKSTART.md) · [Interactive picker](https://cobusgreyling.github.io/looping/#interactive)
 
 For developers using Grok, Claude Code, Codex, Cursor, and other AI coding agents.
 
 <p align="center">
-  <strong><a href="https://cobusgreyling.github.io/loop-engineering/">→ Interactive showcase + pattern picker</a></strong>
+  <strong><a href="https://cobusgreyling.github.io/looping/">→ Interactive showcase + pattern picker</a></strong>
   ·
-  <a href="https://cobusgreyling.substack.com/p/loop-engineering">Essay</a>
+  <a href="https://cobusgreyling.substack.com/p/looping">Essay</a>
   ·
-  <a href="https://addyosmani.com/blog/loop-engineering/">Addy Osmani</a>
+  <a href="https://addyosmani.com/blog/looping/">Addy Osmani</a>
 </p>
 
 ## 🆕 What's New — v1.5.0
@@ -107,11 +107,11 @@ For developers using Grok, Claude Code, Codex, Cursor, and other AI coding agent
 | Start here | Description |
 |------------|-------------|
 | [Quickstart (5 min)](docs/QUICKSTART.md) | Scaffold → cost check → audit → first loop — **start here if you just landed** |
-| [Looping essay](https://cobusgreyling.substack.com/p/loop-engineering) | The concept, primitives, and Grok mapping — read for the why |
+| [Looping essay](https://cobusgreyling.substack.com/p/looping) | The concept, primitives, and Grok mapping — read for the why |
 | [Pattern Picker](docs/pattern-picker.md) | Which loop to run first — **start here if unsure** |
 | [Primitives Matrix](docs/primitives-matrix.md) | Cross-tool loop primitive mapping — bookmark this |
 | [Loop Design Checklist](docs/loop-design-checklist.md) | Ship readiness rubric |
-| [Patterns](patterns/README.md) | 7 production patterns + [interactive picker](https://cobusgreyling.github.io/loop-engineering/#interactive) |
+| [Patterns](patterns/README.md) | 7 production patterns + [interactive picker](https://cobusgreyling.github.io/looping/#interactive) |
 | [Task Families (text + human-action)](patterns/text-tasks/) | New task-family templates for text tasks and supervised human-action workflows |
 | [Token Schemas](schemas/) | Observation/action/outcome/state schemas for auditable loop runtime |
 | [Core Loop Runtime](docs/core-loop-runtime.md) | Observe → plan → risk-gate → execute → verify → trace → recover/escalate |
@@ -204,7 +204,7 @@ flowchart LR
 | [Post-Merge Cleanup](patterns/post-merge-cleanup.md) | 1d–6h | [post-merge-cleanup](starters/post-merge-cleanup/) | **L1** off-peak | Low |
 | [Issue Triage](patterns/issue-triage.md) | 2h–1d | [issue-triage](starters/issue-triage/) | **L1** propose-only | Low |
 
-Not sure which to pick? Try the [interactive picker](https://cobusgreyling.github.io/loop-engineering/#interactive) or [pattern-picker](docs/pattern-picker.md).
+Not sure which to pick? Try the [interactive picker](https://cobusgreyling.github.io/looping/#interactive) or [pattern-picker](docs/pattern-picker.md).
 
 Machine-readable index: [patterns/registry.yaml](patterns/registry.yaml) (7 patterns)
 
@@ -285,7 +285,7 @@ Phased rollout: **L1 report → L2 assisted fixes → L3 unattended** — see [l
 
 ## Caveats
 
-Loop engineering amplifies judgment — both good and bad.
+Looping amplifies judgment — both good and bad.
 
 - **Token costs** can explode with sub-agents and long-running loops.
 - **Verification is still on you.** Unattended loops make unattended mistakes.
@@ -301,8 +301,8 @@ Share production patterns, tool mappings, and failure stories. See [CONTRIBUTING
 
 ## Sources
 
-- [Cobus Greyling – Looping (Substack)](https://cobusgreyling.substack.com/p/loop-engineering)
-- [Addy Osmani – Looping](https://addyosmani.com/blog/loop-engineering/)
+- [Cobus Greyling – Looping (Substack)](https://cobusgreyling.substack.com/p/looping)
+- [Addy Osmani – Looping](https://addyosmani.com/blog/looping/)
 - [Attribution & further reading](resources/sources.md)
 
 ## License
@@ -311,12 +311,12 @@ MIT
 
 ---
 
-*Practical, tool-aware reference for loop engineering, patterns you can clone, checklists you can ship against, and stories that include what broke.*
+*Practical, tool-aware reference for Looping, patterns you can clone, checklists you can ship against, and stories that include what broke.*
 
 <p align="center">
-  <a href="https://cobusgreyling.substack.com/p/loop-engineering">Essay</a>
+  <a href="https://cobusgreyling.substack.com/p/looping">Essay</a>
   ·
-  <a href="https://cobusgreyling.github.io/loop-engineering/">Showcase</a>
+  <a href="https://cobusgreyling.github.io/looping/">Showcase</a>
   ·
   <a href="https://github.com/eli-labz">eli-labz</a>
 </p>
@@ -330,3 +330,4 @@ MIT
     </picture>
   </a>
 </p>
+

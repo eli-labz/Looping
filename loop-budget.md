@@ -1,4 +1,4 @@
-# Loop Budget — loop-engineering (reference repo)
+# Loop Budget — looping (reference repo)
 
 > Dogfood file for the patterns that maintain this repository.
 

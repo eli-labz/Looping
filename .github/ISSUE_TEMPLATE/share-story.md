@@ -1,6 +1,6 @@
 ---
 name: Share a production story (wins or failures)
-about: Real-world loop engineering experience. Failures and surprises are first-class.
+about: Real-world Looping experience. Failures and surprises are first-class.
 labels: story
 ---
 
@@ -23,3 +23,4 @@ labels: story
 ---
 
 Thank you. These stories are the most valuable part of the project.
+

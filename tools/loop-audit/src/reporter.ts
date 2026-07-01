@@ -7,7 +7,7 @@ const LEVEL_BADGE_COLORS: Record<AuditResult['level'], string> = {
   L3: '3ee8c5',
 };
 
-const SHOWCASE_URL = 'https://cobusgreyling.github.io/loop-engineering/';
+const SHOWCASE_URL = 'https://cobusgreyling.github.io/looping/';
 
 /** ASCII progress bar for terminal + demo GIFs. */
 export function formatScoreBar(score: number, width = 20): string {

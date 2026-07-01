@@ -1,6 +1,6 @@
 # The Five Primitives + Memory
 
-This document expands on the core building blocks of loop engineering.
+This document expands on the core building blocks of Looping.
 
 ## 1. Automations / Scheduling
 
@@ -95,3 +95,4 @@ You then add:
 - Connectors when you want it to drive tickets and PRs instead of just suggesting
 
 The best loops are the ones where each new primitive is added only when the previous version has proven its value (and its failure modes).
+

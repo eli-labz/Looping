@@ -60,7 +60,7 @@ Score interpretation:
   - 70-89: Warning (minor inconsistencies)
   - 0-69: Critical (major issues need attention)
 
-Docs: https://github.com/cobusgreyling/loop-engineering/tree/main/tools/loop-sync
+Docs: https://github.com/cobusgreyling/looping/tree/main/tools/loop-sync
 `);
         process.exit(0);
     }
@@ -86,3 +86,4 @@ Docs: https://github.com/cobusgreyling/loop-engineering/tree/main/tools/loop-syn
     }
 }
 main();
+

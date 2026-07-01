@@ -4,13 +4,13 @@
 
 Watch the score climb: [loop-audit-demo.gif](../assets/visuals/loop-audit-demo.gif) (10 → 70 → 100 in ~15s).
 
-Landed from [X](https://x.com), the [showcase](https://cobusgreyling.github.io/loop-engineering/), or a friend's README? This is the shortest path from zero to a running loop.
+Landed from [X](https://x.com), the [showcase](https://cobusgreyling.github.io/looping/), or a friend's README? This is the shortest path from zero to a running loop.
 
 **Week one rule:** report only. No auto-fix, no auto-merge. Read what the loop writes before you let it act.
 
 ## 1. Pick your pain (30 seconds)
 
-Not sure which loop? Use the [interactive pattern picker](https://cobusgreyling.github.io/loop-engineering/#interactive) on the showcase — it recommends a pattern, scaffold command, first `/loop` line, and a token estimate.
+Not sure which loop? Use the [interactive pattern picker](https://cobusgreyling.github.io/looping/#interactive) on the showcase — it recommends a pattern, scaffold command, first `/loop` line, and a token estimate.
 
 Or start with **Daily Triage** if you just want to learn loop discipline with low risk.
 
@@ -124,10 +124,11 @@ npx @cobusgreyling/loop-audit . --badge
 
 ## Learn the why (optional, 10 minutes)
 
-- [Loop Engineering essay](https://cobusgreyling.substack.com/p/loop-engineering) — concept and primitives
+- [Looping essay](https://cobusgreyling.substack.com/p/looping) — concept and primitives
 - [Primitives matrix](./primitives-matrix.md) — Grok vs Claude vs Codex vs OpenClaw vs Opencode vs Cursor
 - [Operating loops](./operating-loops.md) — when to kill a loop
 
 ---
 
-*Questions? [GitHub Discussions](https://github.com/cobusgreyling/loop-engineering/discussions) · Share your setup via [Add Adopter](https://github.com/cobusgreyling/loop-engineering/issues/new?template=add-adopter.yml)*
+*Questions? [GitHub Discussions](https://github.com/cobusgreyling/looping/discussions) · Share your setup via [Add Adopter](https://github.com/cobusgreyling/looping/issues/new?template=add-adopter.yml)*
+

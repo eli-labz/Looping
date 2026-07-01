@@ -1,7 +1,7 @@
 {
   "name": "@cobusgreyling/loop-cost",
   "version": "1.0.3",
-  "description": "Estimate token budgets and daily costs for loop engineering patterns. By cadence, readiness level (L1/L2/L3), and coding agent tool.",
+  "description": "Estimate token budgets and daily costs for Looping patterns. By cadence, readiness level (L1/L2/L3), and coding agent tool.",
   "type": "module",
   "bin": {
     "loop-cost": "dist/cli.js"
@@ -22,7 +22,7 @@
     "node": ">=18"
   },
   "keywords": [
-    "loop-engineering",
+    "looping",
     "ai-agents",
     "coding-agents",
     "token-budget",
@@ -36,12 +36,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobusgreyling/loop-engineering.git",
+    "url": "git+https://github.com/cobusgreyling/looping.git",
     "directory": "tools/loop-cost"
   },
-  "homepage": "https://cobusgreyling.github.io/loop-engineering/",
+  "homepage": "https://cobusgreyling.github.io/looping/",
   "bugs": {
-    "url": "https://github.com/cobusgreyling/loop-engineering/issues"
+    "url": "https://github.com/cobusgreyling/looping/issues"
   },
   "publishConfig": {
     "access": "public"

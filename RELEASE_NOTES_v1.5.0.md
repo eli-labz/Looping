@@ -18,7 +18,7 @@ npx @cobusgreyling/loop-audit . --suggest
 npx @cobusgreyling/loop-sync .
 ```
 
-**New here?** [Quickstart (5 min)](docs/QUICKSTART.md) · [Interactive pattern picker](https://cobusgreyling.github.io/loop-engineering/#interactive)
+**New here?** [Quickstart (5 min)](docs/QUICKSTART.md) · [Interactive pattern picker](https://cobusgreyling.github.io/looping/#interactive)
 
 ---
 
@@ -32,13 +32,13 @@ Detect configuration drift between `STATE.md`, `LOOP.md`, and skill versions. Ru
 npx @cobusgreyling/loop-sync . -v
 ```
 
-Contributed via [#47](https://github.com/cobusgreyling/loop-engineering/pull/47) — thanks @community.
+Contributed via [#47](https://github.com/cobusgreyling/looping/pull/47) — thanks @community.
 
 ### New: `loop-constraints`
 
 Structured guardrails file + enforcement skill. `loop-init` now scaffolds `loop-constraints.md` and the `loop-constraints` skill on every run. `loop-audit` scores constraints presence (+6 readiness points when file + skill both exist).
 
-Contributed via [#71](https://github.com/cobusgreyling/loop-engineering/pull/71).
+Contributed via [#71](https://github.com/cobusgreyling/looping/pull/71).
 
 ### New: `loop-mcp-server` (repo v1)
 
@@ -48,14 +48,14 @@ MCP runtime lookup for patterns, skills, and state. Path traversal guards includ
 node tools/mcp-server/dist/index.js
 ```
 
-Contributed via [#72](https://github.com/cobusgreyling/loop-engineering/pull/72). npm publish coming soon.
+Contributed via [#72](https://github.com/cobusgreyling/looping/pull/72). npm publish coming soon.
 
 ### Updated npm packages
 
 | Package | Version | Highlights |
 |---------|---------|------------|
 | `@cobusgreyling/loop-audit` | **1.5.0** | Constraints scoring + recommendations |
-| `@cobusgreyling/loop-init` | **1.2.3** | Constraints scaffold; serialized asset bundling fix ([#80](https://github.com/cobusgreyling/loop-engineering/pull/80)) |
+| `@cobusgreyling/loop-init` | **1.2.3** | Constraints scaffold; serialized asset bundling fix ([#80](https://github.com/cobusgreyling/looping/pull/80)) |
 | `@cobusgreyling/loop-sync` | **1.0.0** | First npm release |
 
 ### Docs & discoverability
@@ -70,11 +70,11 @@ Contributed via [#72](https://github.com/cobusgreyling/loop-engineering/pull/72)
 
 ## Community
 
-This release merges work from 7 community PRs. Read the full story in [Discussion #89](https://github.com/cobusgreyling/loop-engineering/discussions/89).
+This release merges work from 7 community PRs. Read the full story in [Discussion #89](https://github.com/cobusgreyling/looping/discussions/89).
 
-**Run a loop?** Add yourself to [docs/adopters.md](docs/adopters.md) or [open an Add Adopter issue](https://github.com/cobusgreyling/loop-engineering/issues/new?template=add-adopter.yml).
+**Run a loop?** Add yourself to [docs/adopters.md](docs/adopters.md) or [open an Add Adopter issue](https://github.com/cobusgreyling/looping/issues/new?template=add-adopter.yml).
 
-**Show & tell:** [Discussions → Show and tell](https://github.com/cobusgreyling/loop-engineering/discussions/categories/show-and-tell)
+**Show & tell:** [Discussions → Show and tell](https://github.com/cobusgreyling/looping/discussions/categories/show-and-tell)
 
 ---
 
@@ -84,7 +84,7 @@ Loops discover ongoing work. **Goals finish bounded tasks.**
 
 | Layer | Repo | Command |
 |-------|------|---------|
-| Discover (cadence) | [loop-engineering](https://github.com/cobusgreyling/loop-engineering) | `npx @cobusgreyling/loop-init . --pattern daily-triage --tool grok` |
+| Discover (cadence) | [looping](https://github.com/cobusgreyling/looping) | `npx @cobusgreyling/loop-init . --pattern daily-triage --tool grok` |
 | Finish (run-until-done) | [goal-engineering](https://github.com/cobusgreyling/goal-engineering) | `npx @cobusgreyling/goal init . --pattern fix-bug --tool grok` |
 
 **Stack cookbook:** [loop → goal → fleet day rhythm](https://github.com/cobusgreyling/goal-engineering/blob/main/docs/stack-cookbook.md)

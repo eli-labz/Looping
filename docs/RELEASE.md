@@ -15,10 +15,10 @@ Link npm to GitHub, then for **each package** on [npmjs.com](https://www.npmjs.c
 
 | Package | Repository | Workflow filename |
 |---------|--------------|-------------------|
-| `@cobusgreyling/loop-audit` | `cobusgreyling/loop-engineering` | `release-loop-audit.yml` |
-| `@cobusgreyling/loop-init` | `cobusgreyling/loop-engineering` | `release-loop-init.yml` |
-| `@cobusgreyling/loop-cost` | `cobusgreyling/loop-engineering` | `release-loop-cost.yml` |
-| `@cobusgreyling/loop-sync` | `cobusgreyling/loop-engineering` | `release-loop-sync.yml` |
+| `@cobusgreyling/loop-audit` | `cobusgreyling/looping` | `release-loop-audit.yml` |
+| `@cobusgreyling/loop-init` | `cobusgreyling/looping` | `release-loop-init.yml` |
+| `@cobusgreyling/loop-cost` | `cobusgreyling/looping` | `release-loop-cost.yml` |
+| `@cobusgreyling/loop-sync` | `cobusgreyling/looping` | `release-loop-sync.yml` |
 
 Names must match **exactly** (case-sensitive). No `NPM_TOKEN` secret is required when trusted publishing is configured.
 

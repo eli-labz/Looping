@@ -1,7 +1,7 @@
 {
   "name": "@cobusgreyling/loop-audit",
   "version": "1.5.2",
-  "description": "Loop engineering readiness auditor. Compute Loop Readiness Score (L0-L3), detect activity, and get actionable suggestions. npx @cobusgreyling/loop-audit . --suggest",
+  "description": "Looping readiness auditor. Compute Loop Readiness Score (L0-L3), detect activity, and get actionable suggestions. npx @cobusgreyling/loop-audit . --suggest",
   "type": "module",
   "bin": {
     "loop-audit": "./dist/cli.js"
@@ -23,7 +23,7 @@
     "node": ">=18"
   },
   "keywords": [
-    "loop-engineering",
+    "looping",
     "ai-agents",
     "coding-agents",
     "claude-code",
@@ -37,12 +37,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobusgreyling/loop-engineering.git",
+    "url": "git+https://github.com/cobusgreyling/looping.git",
     "directory": "tools/loop-audit"
   },
-  "homepage": "https://cobusgreyling.github.io/loop-engineering/",
+  "homepage": "https://cobusgreyling.github.io/looping/",
   "bugs": {
-    "url": "https://github.com/cobusgreyling/loop-engineering/issues"
+    "url": "https://github.com/cobusgreyling/looping/issues"
   },
   "publishConfig": {
     "access": "public"

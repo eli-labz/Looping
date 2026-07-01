@@ -1,4 +1,4 @@
-# AGENTS.md — loop-engineering reference
+# AGENTS.md — looping reference
 
 Conventions for humans and loops maintaining this repository.
 

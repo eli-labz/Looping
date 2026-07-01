@@ -1,7 +1,7 @@
 {
   "name": "@cobusgreyling/loop-mcp-server",
   "version": "1.0.0",
-  "description": "MCP server for loop-engineering — exposes patterns, skills, state, and audit tools as runtime-queryable resources for AI agents",
+  "description": "MCP server for looping — exposes patterns, skills, state, and audit tools as runtime-queryable resources for AI agents",
   "type": "module",
   "bin": {
     "loop-mcp-server": "dist/index.js"
@@ -20,7 +20,7 @@
     "node": ">=18"
   },
   "keywords": [
-    "loop-engineering",
+    "looping",
     "mcp",
     "model-context-protocol",
     "ai-agents",
@@ -32,12 +32,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobusgreyling/loop-engineering.git",
+    "url": "git+https://github.com/cobusgreyling/looping.git",
     "directory": "tools/mcp-server"
   },
-  "homepage": "https://cobusgreyling.github.io/loop-engineering/",
+  "homepage": "https://cobusgreyling.github.io/looping/",
   "bugs": {
-    "url": "https://github.com/cobusgreyling/loop-engineering/issues"
+    "url": "https://github.com/cobusgreyling/looping/issues"
   },
   "publishConfig": {
     "access": "public"
@@ -52,3 +52,4 @@
     "typescript": "^5.0.0"
   }
 }
+

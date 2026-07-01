@@ -58,6 +58,7 @@ Also add an entry to `patterns/registry.yaml`.
 - **Good first issues**: look for label [`good first issue`](https://github.com/eli-labz/looping/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 - **Security**: see [SECURITY.md](./SECURITY.md) — do not file public issues for exploitable vulnerabilities
 
-Thank you for helping make Looping the go-to reference for loop engineering.
+Thank you for helping make Looping the go-to reference for Looping.
 
 > ⭐ If this project saves you time, please [give it a star](https://github.com/eli-labz/looping) — it helps others discover it!
+

@@ -383,7 +383,7 @@ async function main() {
   const args = parseArgs(process.argv.slice(2));
 
   if (args.help) {
-    console.log(`loop-init — scaffold loop engineering starters
+    console.log(`loop-init — scaffold Looping starters
 
 Usage:
   loop-init [target-dir] --pattern <name> --tool <grok|claude|codex|opencode>

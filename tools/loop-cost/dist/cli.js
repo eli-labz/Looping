@@ -49,7 +49,7 @@ async function loadRegistry() {
             /* try next */
         }
     }
-    throw new Error('Pattern registry not found. Run from loop-engineering repo or install @cobusgreyling/loop-cost.');
+    throw new Error('Pattern registry not found. Run from looping repo or install @cobusgreyling/loop-cost.');
 }
 async function main() {
     const args = parseArgs(process.argv.slice(2));
@@ -115,3 +115,4 @@ main().catch((err) => {
     console.error('loop-cost failed:', msg);
     process.exit(1);
 });
+

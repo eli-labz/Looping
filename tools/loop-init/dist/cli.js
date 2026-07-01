@@ -320,7 +320,7 @@ function auditTargetArg(target, targetDir) {
 async function main() {
     const args = parseArgs(process.argv.slice(2));
     if (args.help) {
-        console.log(`loop-init — scaffold loop engineering starters
+        console.log(`loop-init — scaffold Looping starters
 
 Usage:
   loop-init [target-dir] --pattern <name> --tool <grok|claude|codex|opencode>
@@ -491,3 +491,4 @@ main().catch((err) => {
     console.error('loop-init failed:', err instanceof Error ? err.message : err);
     process.exit(1);
 });
+

@@ -6,7 +6,7 @@ labels:
 body:
   - type: markdown
     value: |
-      Share how you run loops from this repo (or an adaptation). We'll add your project to [docs/adopters.md](https://github.com/cobusgreyling/loop-engineering/blob/main/docs/adopters.md) and the [showcase adopters wall](https://cobusgreyling.github.io/loop-engineering/#adopters).
+      Share how you run loops from this repo (or an adaptation). We'll add your project to [docs/adopters.md](https://github.com/cobusgreyling/looping/blob/main/docs/adopters.md) and the [showcase adopters wall](https://cobusgreyling.github.io/looping/#adopters).
 
       **Optional:** paste your Loop Ready badge from `npx @cobusgreyling/loop-audit . --badge`.
 

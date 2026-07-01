@@ -1,8 +1,8 @@
 # Concepts & Vocabulary
 
-Loop engineering sits in a family of ideas about agentic software development. This glossary links them so you can design loops with the right mental model.
+Looping sits in a family of ideas about agentic software development. This glossary links them so you can design loops with the right mental model.
 
-## Loop Engineering
+## Looping
 
 **Replacing yourself as the prompter.** You design a system that discovers work, assigns it, verifies results, and persists state — instead of typing the next prompt yourself.
 
@@ -21,7 +21,7 @@ Loop    = harness + schedule + state + verification chain
 
 ### The Factory Model
 
-The system that **builds** the software: pipelines, agents, checks, and handoffs. Loop engineering is how you operate the factory floor — not manually assembling each unit.
+The system that **builds** the software: pipelines, agents, checks, and handoffs. Looping is how you operate the factory floor — not manually assembling each unit.
 
 ### Intent Debt
 

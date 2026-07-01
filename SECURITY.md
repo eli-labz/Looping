@@ -1,12 +1,12 @@
 # Security Policy
 
-Loop engineering runs unattended automation against your codebase. Treat loops like production operators.
+Looping runs unattended automation against your codebase. Treat loops like production operators.
 
 ## Reporting vulnerabilities
 
 Report security issues **privately** — do not open public issues for exploitable vulnerabilities.
 
-- **Preferred:** [GitHub private vulnerability reporting](https://github.com/cobusgreyling/loop-engineering/security/advisories/new)
+- **Preferred:** [GitHub private vulnerability reporting](https://github.com/cobusgreyling/looping/security/advisories/new)
 - **Email:** security@cobusgreyling.me (PGP on request)
 
 For general loop safety guidance, see [docs/safety.md](docs/safety.md).

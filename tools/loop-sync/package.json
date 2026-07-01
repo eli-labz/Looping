@@ -17,7 +17,7 @@
     "prepublishOnly": "npm test"
   },
   "keywords": [
-    "loop-engineering",
+    "looping",
     "sync",
     "drift-detection",
     "configuration"
@@ -26,12 +26,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobusgreyling/loop-engineering.git",
+    "url": "git+https://github.com/cobusgreyling/looping.git",
     "directory": "tools/loop-sync"
   },
-  "homepage": "https://github.com/cobusgreyling/loop-engineering/tree/main/tools/loop-sync#readme",
+  "homepage": "https://github.com/cobusgreyling/looping/tree/main/tools/loop-sync#readme",
   "bugs": {
-    "url": "https://github.com/cobusgreyling/loop-engineering/issues"
+    "url": "https://github.com/cobusgreyling/looping/issues"
   },
   "engines": {
     "node": ">=18"

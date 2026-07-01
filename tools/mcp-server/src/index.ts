@@ -19,7 +19,7 @@ import {
 } from './resolver.js';
 
 const server = new McpServer({
-  name: 'loop-engineering',
+  name: 'looping',
   version: '1.0.0',
 });
 
@@ -170,7 +170,7 @@ server.resource(
 
 server.tool(
   'loop_list_patterns',
-  'List all available loop engineering patterns with their goals, cadences, and risk levels',
+  'List all available Looping patterns with their goals, cadences, and risk levels',
   {},
   async () => {
     const root = await resolveProjectRoot();
@@ -439,3 +439,4 @@ main().catch((err) => {
 });
 
 export { server };
+

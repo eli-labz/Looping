@@ -1,12 +1,12 @@
 # @cobusgreyling/loop-mcp-server
 
-MCP (Model Context Protocol) server for **loop-engineering** — exposes patterns, skills, state, budget, and audit tools as runtime-queryable resources for AI agents.
+MCP (Model Context Protocol) server for **looping** — exposes patterns, skills, state, budget, and audit tools as runtime-queryable resources for AI agents.
 
 Instead of stuffing all loop documentation into the prompt, agents can query only what they need on-demand via MCP.
 
 ## Quick Start
 
-**v1 ships from this repo** (npm publish pending). From a cloned `loop-engineering` repo:
+**v1 ships from this repo** (npm publish pending). From a cloned `looping` repo:
 
 ```bash
 cd tools/mcp-server && npm ci && npm test
@@ -22,7 +22,7 @@ Add to your MCP config (`.mcp.json` or equivalent):
 ```json
 {
   "mcpServers": {
-    "loop-engineering": {
+    "looping": {
       "command": "npx",
       "args": ["-y", "@cobusgreyling/loop-mcp-server"],
       "env": {
@@ -94,7 +94,8 @@ The server reads from the local filesystem at `LOOP_PROJECT_ROOT`. It is read-on
 
 ## See Also
 
-- [Loop Engineering Patterns](../../patterns/)
+- [Looping Patterns](../../patterns/)
 - [MCP Examples](../../examples/mcp/)
 - [Primitives: Plugins & Connectors](../../docs/primitives.md)
 - [Safety: MCP Least Privilege](../../docs/safety.md)
+

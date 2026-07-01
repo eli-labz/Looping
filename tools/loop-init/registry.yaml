@@ -1,4 +1,4 @@
-# Machine-readable pattern registry for loop-engineering
+# Machine-readable pattern registry for looping
 # Used by loop-audit, loop-cost, docs site, and tooling.
 
 patterns:
@@ -148,3 +148,4 @@ patterns:
       tokens_action: 60000
       suggested_daily_cap: 80000
       early_exit_required: false
+

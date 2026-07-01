@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "loop-engineering": {
+    "looping": {
       "command": "npx",
       "args": ["-y", "@cobusgreyling/loop-mcp-server"],
       "env": {
@@ -9,3 +9,4 @@
     }
   }
 }
+

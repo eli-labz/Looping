@@ -74,7 +74,7 @@ Example state entry:
 
 **General**:
 - Expose the state file in the repo or a shared doc so the whole team can see what the loop is doing.
-- Make the loop's comments on PRs clearly signed (e.g. "🤖 Loop Engineering — PR Babysitter").
+- Make the loop's comments on PRs clearly signed (e.g. "🤖 Looping — PR Babysitter").
 
 ## Failure Modes & Mitigations
 
@@ -106,3 +106,4 @@ High cadence without early-exit burns tokens fast. Use `loop-budget` skill + `lo
 - Reduction in "can you rebase?" or "CI is red" pings in Slack/Linear.
 
 Start with one team or one repo. Measure for a week. Then expand.
+

@@ -3,7 +3,7 @@
 1. Repo **Settings** → **Pages**
 2. **Source**: Deploy from branch `main`
 3. **Folder**: `/docs`
-4. Save — showcase at `https://cobusgreyling.github.io/loop-engineering/`
+4. Save — showcase at `https://cobusgreyling.github.io/looping/`
 
 The homepage (`docs/index.html`) is the full interactive showcase with patterns, primitives, quick-start, and an anatomy diagram.
 

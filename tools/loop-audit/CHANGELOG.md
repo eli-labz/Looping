@@ -17,7 +17,7 @@ All notable changes to `@cobusgreyling/loop-audit` are documented here.
 ## [1.4.1] - 2026-06-13
 
 ### Changed
-- Updated package description and keywords for better discoverability on npm / npx (emphasizes "loop engineering", coding agents, and concrete usage examples).
+- Updated package description and keywords for better discoverability on npm / npx (emphasizes "Looping", coding agents, and concrete usage examples).
 
 ## [1.3.0] - 2026-06-09
 

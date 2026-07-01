@@ -150,7 +150,7 @@ test('formatBadge: includes level and score', () => {
   });
   assert.match(badge, /Loop Ready L2 \(72\/100\)/);
   assert.match(badge, /img\.shields\.io/);
-  assert.match(badge, /loop-engineering/);
+  assert.match(badge, /looping/);
 });
 
 test('auditProject: git commit with triage counts as loop activity', async () => {
