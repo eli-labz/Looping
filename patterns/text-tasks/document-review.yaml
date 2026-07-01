@@ -1,0 +1,22 @@
+id: document-review
+family: text-tasks
+summary: Review a document against defined quality, policy, or style criteria.
+inputs:
+  - document
+  - rubric
+outputs:
+  - findings
+  - recommendation
+loop:
+  observe:
+    - read_document
+    - read_rubric
+  plan:
+    - map_sections_to_criteria
+  execute:
+    - score_sections
+    - collect_evidence
+  verify:
+    - cross_check_scores
+  record:
+    - write_action_trace

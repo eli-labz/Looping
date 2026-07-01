@@ -1,0 +1,23 @@
+id: email-workflow
+family: human-action-tasks
+summary: Draft and prepare email communication under human approval gates.
+inputs:
+  - recipient_context
+  - message_goal
+outputs:
+  - email_draft
+  - approval_record
+controls:
+  requires_human_approval_for:
+    - send
+loop:
+  observe:
+    - read_context_and_history
+  plan:
+    - choose_tone_and_structure
+  execute:
+    - draft_email
+  verify:
+    - policy_and_fact_check
+  record:
+    - write_action_trace

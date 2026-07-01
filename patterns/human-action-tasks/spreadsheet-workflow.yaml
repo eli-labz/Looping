@@ -1,0 +1,24 @@
+id: spreadsheet-workflow
+family: human-action-tasks
+summary: Execute spreadsheet analysis steps with range-level traceability.
+inputs:
+  - workbook
+  - analysis_goal
+outputs:
+  - variance_summary
+  - action_ledger
+controls:
+  requires_human_approval_for:
+    - overwrite_existing_sheet
+    - external_data_refresh
+loop:
+  observe:
+    - inspect_sheet_and_named_ranges
+  plan:
+    - select_ranges_and_formulas
+  execute:
+    - read_write_format
+  verify:
+    - formula_and_total_checks
+  record:
+    - write_action_trace

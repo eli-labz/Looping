@@ -1,0 +1,25 @@
+id: physical-world-supervision
+family: human-action-tasks
+summary: Physical-world aware workflows that remain human-supervised and simulator-friendly.
+inputs:
+  - observation_feed
+  - task_goal
+outputs:
+  - recommended_actions
+  - supervision_log
+controls:
+  autonomy_mode: human_supervised
+  disallowed:
+    - unattended_execution
+    - irreversible_actuation_without_human
+loop:
+  observe:
+    - collect_sensor_or_human_reports
+  plan:
+    - produce_recommendation
+  execute:
+    - route_to_human
+  verify:
+    - confirm_human_acknowledgement
+  record:
+    - write_action_trace

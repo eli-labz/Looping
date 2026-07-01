@@ -1,0 +1,20 @@
+id: research-synthesis
+family: text-tasks
+summary: Combine multiple sources into a concise synthesis with explicit citations.
+inputs:
+  - source_set
+  - synthesis_goal
+outputs:
+  - synthesis_report
+  - citation_index
+loop:
+  observe:
+    - read_sources
+  plan:
+    - cluster_themes
+  execute:
+    - draft_findings
+  verify:
+    - source_traceability_check
+  record:
+    - write_action_trace

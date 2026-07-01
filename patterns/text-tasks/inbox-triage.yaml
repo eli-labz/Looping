@@ -1,0 +1,21 @@
+id: inbox-triage
+family: text-tasks
+summary: Classify, prioritize, and route inbound messages to appropriate owners.
+inputs:
+  - messages
+  - routing_rules
+outputs:
+  - labeled_messages
+  - routing_queue
+loop:
+  observe:
+    - parse_sender_subject_body
+  plan:
+    - choose_priority_and_route
+  execute:
+    - classify
+    - assign_owner
+  verify:
+    - check_rule_matches
+  record:
+    - write_action_trace

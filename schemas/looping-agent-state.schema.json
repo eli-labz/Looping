@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://looping.dev/schemas/looping-agent-state.schema.json",
+  "title": "LoopingAgentState",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "goal",
+    "observations",
+    "actionHistory",
+    "outcomeHistory",
+    "memoryRefs",
+    "constraints",
+    "urgency",
+    "uncertainty"
+  ],
+  "properties": {
+    "goal": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "$ref": "./observation-token.schema.json"
+      }
+    },
+    "actionHistory": {
+      "type": "array",
+      "items": {
+        "$ref": "./human-action-token.schema.json"
+      }
+    },
+    "outcomeHistory": {
+      "type": "array",
+      "items": {
+        "$ref": "./outcome-token.schema.json"
+      }
+    },
+    "memoryRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "urgency": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "uncertainty": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    }
+  }
+}

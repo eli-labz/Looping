@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://looping.dev/schemas/human-action-token.schema.json",
+  "title": "HumanActionToken",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["verb", "target", "preconditions", "expectedOutcome", "cost", "risk"],
+  "properties": {
+    "verb": {
+      "type": "string",
+      "enum": [
+        "CLICK",
+        "TYPE",
+        "OPEN_APP",
+        "SELECT_RANGE",
+        "READ",
+        "WRITE",
+        "MOVE",
+        "WAIT",
+        "ASK_HUMAN",
+        "ESCALATE"
+      ]
+    },
+    "target": {
+      "type": "string",
+      "minLength": 1
+    },
+    "args": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "preconditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "expectedOutcome": {
+      "type": "string",
+      "minLength": 1
+    },
+    "cost": {
+      "type": "number",
+      "minimum": 0
+    },
+    "risk": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    }
+  }
+}

@@ -1,0 +1,21 @@
+id: report-generation
+family: text-tasks
+summary: Build structured reports from data snapshots and narrative requirements.
+inputs:
+  - dataset
+  - report_template
+outputs:
+  - report_draft
+  - assumptions_log
+loop:
+  observe:
+    - read_dataset
+    - read_template
+  plan:
+    - build_outline
+  execute:
+    - fill_sections
+  verify:
+    - numeric_and_narrative_consistency_check
+  record:
+    - write_action_trace

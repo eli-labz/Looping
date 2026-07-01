@@ -1,0 +1,38 @@
+name: revenue-variance-human-action-loop
+goal: explain weekly revenue variance and prepare a human-approved customer-facing update
+steps:
+  - id: open_dashboard
+    action:
+      verb: OPEN_APP
+      target: browser://revenue-dashboard
+    expectedOutcome: dashboard visible with latest KPIs
+
+  - id: export_csv
+    action:
+      verb: CLICK
+      target: dashboard.export.csv
+    expectedOutcome: weekly_revenue.csv downloaded
+
+  - id: open_spreadsheet
+    action:
+      verb: OPEN_APP
+      target: spreadsheet://weekly_revenue.csv
+    expectedOutcome: spreadsheet opened with parsed rows
+
+  - id: analyze_variance
+    action:
+      verb: SELECT_RANGE
+      target: Sheet1!A1:H500
+    expectedOutcome: variance breakdown by segment available
+
+  - id: draft_email
+    action:
+      verb: WRITE
+      target: mail://draft
+    expectedOutcome: draft explains variance drivers and next actions
+
+  - id: ask_human_before_send
+    action:
+      verb: ASK_HUMAN
+      target: approver://finance-lead
+    expectedOutcome: explicit approval or rejection recorded

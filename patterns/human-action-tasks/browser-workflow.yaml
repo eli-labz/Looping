@@ -1,0 +1,25 @@
+id: browser-workflow
+family: human-action-tasks
+summary: Perform supervised browser tasks with explicit preconditions and verification.
+inputs:
+  - target_url
+  - task_objective
+outputs:
+  - action_ledger
+  - verified_outcome
+controls:
+  requires_human_approval_for:
+    - submit
+    - delete
+    - payment
+loop:
+  observe:
+    - read_dom_state
+  plan:
+    - choose_next_ui_action
+  execute:
+    - click_type_navigate
+  verify:
+    - assert_expected_state
+  record:
+    - write_action_trace

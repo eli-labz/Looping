@@ -1,4 +1,4 @@
-# Loop Engineering
+# Looping
 
 
 <p align="center">
@@ -21,14 +21,14 @@
 
 <p align="center">
   <a href="https://cobusgreyling.github.io/loop-engineering/">
-    <img src="assets/visuals/loop-engineering-logo.svg" alt="Loop Engineering logo" width="88" />
+    <img src="assets/visuals/loop-engineering-logo.svg" alt="Looping logo" width="88" />
   </a>
 </p>
 
 > **Stop prompting. Design the loop. Get a score.**
 
 <p align="center">
-  <img src="assets/visuals/LE5.jpeg" alt="Loop Engineering — design the system that prompts your agents" width="100%" />
+  <img src="assets/visuals/LE5.jpeg" alt="Looping — design the system that prompts your agents" width="100%" />
 </p>
 
 ```bash
@@ -64,6 +64,7 @@ For developers using Grok, Claude Code, Codex, Cursor, and other AI coding agent
 - [Why This Matters](#why-this-matters)
 - [The Five Building Blocks + Memory](#the-five-building-blocks--memory)
 - [Patterns](#patterns)
+- [Task Families](#task-families)
 - [Getting Started (5 minutes)](#getting-started-5-minutes)
 - [Examples by Tool](#examples-by-tool)
 - [Operating & Safety](#operating--safety)
@@ -77,11 +78,14 @@ For developers using Grok, Claude Code, Codex, Cursor, and other AI coding agent
 | Start here | Description |
 |------------|-------------|
 | [Quickstart (5 min)](docs/QUICKSTART.md) | Scaffold → cost check → audit → first loop — **start here if you just landed** |
-| [Loop Engineering essay](https://cobusgreyling.substack.com/p/loop-engineering) | The concept, primitives, and Grok mapping — read for the why |
+| [Looping essay](https://cobusgreyling.substack.com/p/loop-engineering) | The concept, primitives, and Grok mapping — read for the why |
 | [Pattern Picker](docs/pattern-picker.md) | Which loop to run first — **start here if unsure** |
 | [Primitives Matrix](docs/primitives-matrix.md) | Cross-tool loop primitive mapping — bookmark this |
 | [Loop Design Checklist](docs/loop-design-checklist.md) | Ship readiness rubric |
 | [Patterns](patterns/README.md) | 7 production patterns + [interactive picker](https://cobusgreyling.github.io/loop-engineering/#interactive) |
+| [Task Families (text + human-action)](patterns/text-tasks/) | New task-family templates for text tasks and supervised human-action workflows |
+| [Token Schemas](schemas/) | Observation/action/outcome/state schemas for auditable loop runtime |
+| [Core Loop Runtime](docs/core-loop-runtime.md) | Observe → plan → risk-gate → execute → verify → trace → recover/escalate |
 | [Starters](starters/) | Clone-and-run kits (Grok, Claude Code, Codex, Opencode) |
 | [Opencode examples](examples/opencode/) | CLI-first loops: cron/systemd + `opencode run`, skills, worktrees |
 | [loop-audit](tools/loop-audit/) | Loop Readiness Score CLI (v1.5 + constraints scoring) — `npx @cobusgreyling/loop-audit . --suggest` · `--badge` for README |
@@ -124,7 +128,7 @@ Full detail: [docs/primitives.md](docs/primitives.md) · Cross-tool matrix: [doc
 ### Visual Overview
 
 <p align="center">
-  <img src="assets/visuals/primitives-infographic.jpg" alt="The Five Building Blocks + Memory — Loop Engineering" width="100%" />
+  <img src="assets/visuals/primitives-infographic.jpg" alt="The Five Building Blocks + Memory — Looping" width="100%" />
 </p>
 
 ### Anatomy of a Loop
@@ -175,6 +179,21 @@ Not sure which to pick? Try the [interactive picker](https://cobusgreyling.githu
 
 Machine-readable index: [patterns/registry.yaml](patterns/registry.yaml) (7 patterns)
 
+## Task Families
+
+New family folders for staged capability rollout:
+
+- [Text Tasks](patterns/text-tasks/) - summarize, classify, draft, compare, extract
+- [Human-Action Tasks](patterns/human-action-tasks/) - browser, spreadsheet, email, and supervised physical-world routing
+
+Runtime token models and schemas:
+
+- [TypeScript token model](tools/mcp-server/src/models/tokens.ts)
+- [Observation token schema](schemas/observation-token.schema.json)
+- [Human-action token schema](schemas/human-action-token.schema.json)
+- [Outcome token schema](schemas/outcome-token.schema.json)
+- [Looping agent state schema](schemas/looping-agent-state.schema.json)
+
 ## Getting Started (5 minutes)
 
 ```bash
@@ -217,6 +236,7 @@ Phased rollout: **L1 report → L2 assisted fixes → L3 unattended** — see [l
 - [OpenClaw](examples/openclaw/daily-triage.md)
 - [Opencode](examples/opencode/)
 - [GitHub Actions](examples/github-actions/)
+- [Revenue Variance Human-Action Loop](examples/revenue-variance-human-action-loop/)
 
 ## Operating & Safety
 
@@ -228,6 +248,11 @@ Phased rollout: **L1 report → L2 assisted fixes → L3 unattended** — see [l
 - [Security](SECURITY.md) — reporting and unattended automation risks
 - [Concepts](docs/concepts.md) — intent debt, comprehension debt, harness vs loop
 - [MCP Cookbook](examples/mcp/) — connector examples by pattern
+- [Governance](docs/governance.md) — reliability metrics as product features
+- [Risk Gates](docs/risk-gates.md) — allow/block/escalate policy checks
+- [Human Approval](docs/human-approval.md) — explicit sign-off for high-impact actions
+- [Action Ledger](docs/action-ledger.md) — auditable observation/action/outcome trace
+- [Physical-World Boundaries](docs/physical-world-boundaries.md) — supervised, simulator-friendly rollout
 
 ## Caveats
 
@@ -247,8 +272,8 @@ Share production patterns, tool mappings, and failure stories. See [CONTRIBUTING
 
 ## Sources
 
-- [Cobus Greyling – Loop Engineering (Substack)](https://cobusgreyling.substack.com/p/loop-engineering)
-- [Addy Osmani – Loop Engineering](https://addyosmani.com/blog/loop-engineering/)
+- [Cobus Greyling – Looping (Substack)](https://cobusgreyling.substack.com/p/loop-engineering)
+- [Addy Osmani – Looping](https://addyosmani.com/blog/loop-engineering/)
 - [Attribution & further reading](resources/sources.md)
 
 ## License

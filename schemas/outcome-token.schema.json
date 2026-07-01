@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://looping.dev/schemas/outcome-token.schema.json",
+  "title": "OutcomeToken",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "evidence"],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["SUCCESS", "MISMATCH", "BLOCKED", "ESCALATED", "FAILED"]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "nextStateHint": {
+      "type": "string"
+    }
+  }
+}
