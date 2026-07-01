@@ -8,13 +8,13 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/cobusgreyling/loop-engineering/stargazers"><img src="https://img.shields.io/github/stars/cobusgreyling/loop-engineering?style=social" alt="GitHub stars"></a>
-  <a href="https://github.com/cobusgreyling/loop-engineering/actions/workflows/audit.yml"><img src="https://img.shields.io/github/actions/workflow/status/cobusgreyling/loop-engineering/audit.yml?label=loop-audit%20dogfood" alt="loop-audit dogfood"></a>
+  <a href="https://github.com/eli-labz/looping/stargazers"><img src="https://img.shields.io/github/stars/eli-labz/looping?style=social" alt="GitHub Stars"></a>
+  <a href="https://github.com/eli-labz/looping/actions/workflows/audit.yml"><img src="https://img.shields.io/github/actions/workflow/status/eli-labz/looping/audit.yml?label=loop-audit%20dogfood" alt="loop-audit dogfood"></a>
   <a href="https://www.npmjs.com/package/@cobusgreyling/loop-audit"><img src="https://img.shields.io/npm/v/@cobusgreyling/loop-audit?label=loop-audit" alt="loop-audit npm"></a>
   <a href="https://www.npmjs.com/package/@cobusgreyling/loop-init"><img src="https://img.shields.io/npm/v/@cobusgreyling/loop-init?label=loop-init" alt="loop-init npm"></a>
   <a href="https://www.npmjs.com/package/@cobusgreyling/loop-cost"><img src="https://img.shields.io/npm/v/@cobusgreyling/loop-cost?label=loop-cost" alt="loop-cost npm"></a>
   <a href="https://www.npmjs.com/package/@cobusgreyling/loop-sync"><img src="https://img.shields.io/npm/v/@cobusgreyling/loop-sync?label=loop-sync" alt="loop-sync npm"></a>
-  <a href="https://github.com/cobusgreyling/loop-engineering/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT"></a>
+  <a href="https://github.com/eli-labz/looping/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT"></a>
   <a href="https://cobusgreyling.github.io/loop-engineering/"><img src="https://img.shields.io/badge/GitHub_Pages-live%20%7C%20interactive-3ee8c5" alt="Pages"></a>
 </p>
 
@@ -26,6 +26,21 @@
 </p>
 
 > **Stop prompting. Design the loop. Get a score.**
+
+---
+
+<p align="center">
+  <strong>⭐ If Looping saves you time, a star helps others find it</strong><br/>
+  <a href="https://github.com/eli-labz/looping/stargazers">
+    <img src="https://img.shields.io/github/stars/eli-labz/looping?style=for-the-badge&color=3ee8c5&labelColor=111a28" alt="Stars" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/eli-labz/looping/fork">
+    <img src="https://img.shields.io/github/forks/eli-labz/looping?style=for-the-badge&color=6e7681&labelColor=111a28" alt="Forks" />
+  </a>
+</p>
+
+---
 
 <p align="center">
   <img src="assets/visuals/LE5.jpeg" alt="Looping — design the system that prompts your agents" width="100%" />
@@ -56,6 +71,18 @@ For developers using Grok, Claude Code, Codex, Cursor, and other AI coding agent
   ·
   <a href="https://addyosmani.com/blog/loop-engineering/">Addy Osmani</a>
 </p>
+
+## 🆕 What's New — v1.5.0
+
+| Feature | What it does |
+|---------|-------------|
+| **loop-sync v1.0.0** | Detects drift between `STATE.md` and `LOOP.md` — catches loops that wander off design |
+| **Constraints scoring** | `loop-audit` now scores budget caps, denylist completeness, and human-gate coverage |
+| **MCP server (v1)** | Runtime lookup for patterns, skills, and state over MCP |
+| **Task Families** | New `text-tasks/` and `human-action-tasks/` templates for staged rollout |
+| **Physical-World Boundaries** | Supervisor-friendly rollout guide for loops that touch the physical world |
+
+---
 
 ## Contents
 
@@ -95,8 +122,8 @@ For developers using Grok, Claude Code, Codex, Cursor, and other AI coding agent
 | [loop-mcp-server](tools/mcp-server/) | MCP runtime lookup for patterns, skills, state — `node tools/mcp-server/dist/index.js` (repo v1; npm pending) |
 | [Goal Engineering](https://github.com/cobusgreyling/goal-engineering) | **Companion:** loops discover, goals finish — `/goal` + [stack cookbook](https://github.com/cobusgreyling/goal-engineering/blob/main/docs/stack-cookbook.md) (`npx @cobusgreyling/goal doctor .`) |
 | [Stories](stories/) | Real wins and honest failures |
-| [Community update](https://github.com/cobusgreyling/loop-engineering/discussions/89) | v1.5.0 release — loop-sync, constraints, MCP server |
-| [Add your project](https://github.com/cobusgreyling/loop-engineering/discussions/92) | **Pinned:** Loop Ready badge + adopters list |
+| [Community update](https://github.com/eli-labz/looping/discussions) | v1.5.0 release — loop-sync, constraints, MCP server |
+| [Add your project](https://github.com/eli-labz/looping/discussions) | **Pinned:** Loop Ready badge + adopters list |
 
 <p align="center">
   <img src="assets/visuals/section-divider.svg" alt="" width="100%" />
@@ -268,7 +295,7 @@ Addy Osmani:
 
 ## Contributing
 
-Share production patterns, tool mappings, and failure stories. See [CONTRIBUTING.md](CONTRIBUTING.md), [adopters](docs/adopters.md), and [GitHub Discussions](https://github.com/cobusgreyling/loop-engineering/discussions).
+Share production patterns, tool mappings, and failure stories. See [CONTRIBUTING.md](CONTRIBUTING.md), [adopters](docs/adopters.md), and [GitHub Discussions](https://github.com/eli-labz/looping/discussions).
 
 ## Sources
 
@@ -289,15 +316,15 @@ MIT
   ·
   <a href="https://cobusgreyling.github.io/loop-engineering/">Showcase</a>
   ·
-  <a href="https://github.com/cobusgreyling">Cobus Greyling</a>
+  <a href="https://github.com/eli-labz">eli-labz</a>
 </p>
 
 <p align="center">
-  <a href="https://www.star-history.com/?repos=cobusgreyling%2Floop-engineering&type=timeline&legend=top-left">
+  <a href="https://www.star-history.com/#eli-labz/looping&Timeline">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=cobusgreyling/loop-engineering&type=timeline&theme=dark&legend=top-left" />
-      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=cobusgreyling/loop-engineering&type=timeline&legend=top-left" />
-      <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=cobusgreyling/loop-engineering&type=timeline&legend=top-left" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=eli-labz%2Flooping&type=Timeline&theme=dark" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=eli-labz%2Flooping&type=Timeline" />
+      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=eli-labz%2Flooping&type=Timeline" />
     </picture>
   </a>
 </p>
