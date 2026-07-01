@@ -1,4 +1,4 @@
-# Contributing to Loop Engineering
+# Contributing to Looping
 
 This repo is a **practical engineering reference**, not a hype collection. We welcome patterns, stories, tool mappings, and honest failure reports.
 
@@ -52,10 +52,12 @@ Also add an entry to `patterns/registry.yaml`.
 
 ## Community
 
-- **Questions**: [GitHub Discussions](https://github.com/cobusgreyling/loop-engineering/discussions) (preferred) or issue with label `question`
-- **Show your loop**: [Add Adopter issue](https://github.com/cobusgreyling/loop-engineering/issues/new?template=add-adopter.yml), Discussions, or a row in [docs/adopters.md](./docs/adopters.md)
+- **Questions**: [GitHub Discussions](https://github.com/eli-labz/looping/discussions) (preferred) or issue with label `question`
+- **Show your loop**: [Add Adopter issue](https://github.com/eli-labz/looping/issues/new?template=add-adopter.yml), Discussions, or a row in [docs/adopters.md](./docs/adopters.md)
 - **Loop Ready badge**: `npx @cobusgreyling/loop-audit . --badge` — paste into your README
-- **Good first issues**: look for label [`good first issue`](https://github.com/cobusgreyling/loop-engineering/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+- **Good first issues**: look for label [`good first issue`](https://github.com/eli-labz/looping/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 - **Security**: see [SECURITY.md](./SECURITY.md) — do not file public issues for exploitable vulnerabilities
 
-Thank you for helping make this the go-to reference for loop engineering.
+Thank you for helping make Looping the go-to reference for loop engineering.
+
+> ⭐ If this project saves you time, please [give it a star](https://github.com/eli-labz/looping) — it helps others discover it!
