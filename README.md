@@ -27,6 +27,8 @@
 
 > **Stop prompting. Design the loop. Get a score.**
 
+Project owner: Darrell Mesa (darrell.mesa@pm-ss.org) · https://eli-labz.com/
+
 ---
 
 <p align="center">
